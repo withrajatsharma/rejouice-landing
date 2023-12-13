@@ -30,3 +30,74 @@ ScrollTrigger.refresh();}
 loco();
 
 
+
+// cursor effect on page1
+(()=>{
+  
+var page1Cont = document.querySelector("#page1-cont");
+var cursor = document.querySelector("#cursor");
+var menu = document.querySelector("nav h4");
+
+page1Cont.addEventListener("mousemove" , (e)=>{
+ 
+      gsap.to(cursor,{
+        x:e.x,
+        y:e.y,
+        duration:.4
+      })
+
+})
+page1Cont.addEventListener("mouseenter" , (e)=>{
+
+      gsap.to(cursor,{
+        scale:1,
+        opacity:1,
+
+      })
+
+})
+page1Cont.addEventListener("mouseleave" , (e)=>{
+
+      gsap.to(cursor,{
+        scale:0,
+        opacity:0,
+
+      })
+
+})
+
+menu.addEventListener("mouseenter" ,()=>{
+  
+  gsap.to(cursor,{
+    scale:0,
+    opacity:0,
+
+  })
+
+     
+} )
+menu.addEventListener("mouseleave" ,()=>{
+  
+  gsap.to(cursor,{
+    scale:1,
+    opacity:1,
+
+  })
+
+     
+} )
+
+page1Cont.addEventListener("click" ,()=>{
+
+} )
+
+})();
+
+
+gsap.from("#page2 p",{
+  transform:"translateY(100%)",
+  opacity:0,
+  duration:1,
+  // stagger:.5
+
+})

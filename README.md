@@ -1,2 +1,2 @@
-# tailwind-gsap
+# rejouice landing page using tailwind and gsap.
  

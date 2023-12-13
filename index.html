@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <title>tailwind-gsap-practice</title>
+    <title>REJOUICE®️</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="font-[secondary]">
@@ -12,16 +13,20 @@
 
     <div id="main">
 
-        <div id="page1" class="h-screen relative overflow-hidden">
+        <div id="page1" class="select-none h-screen relative overflow-hidden">
 
-            <video class="absolute z-0 w-full h-full object-cover" autoplay loop muted src="./src/assets/RJ-2.0-Video background .mp4"></video>
+            <div id="cursor" class="flex justify-center fixed -z-10 items-center rounded-full bg-[#FF5F37] h-[7vw] w-[7vw] -translate-x-1/2 -translate-y-1/2">
+                <h3 class="text-base">Play Reel</h3>
+            </div>
 
-            <div id="page1-cont" class="text-white relative z-10 w-full h-full flex flex-col justify-between items-center">
+            <video class="absolute -z-20 w-full  h-full object-cover" autoplay loop muted src="./src/assets/RJ-2.0-Video background .mp4"></video>
+
+            <div id="page1-cont" class="text-white relative w-full h-full flex flex-col justify-between items-center">
                 <nav class=" w-full flex justify-between px-12 h-28 items-center">
-                    <h3 class="text-xl">The Venture Agency.</h3>
-                    <h4 class="text-xl">Menu</h4>
+                    <h3 class="text-xl ">The Venture Agency.</h3>
+                    <h4 class="text-xl cursor-pointer">Menu</h4>
                 </nav>
-                <h1 class="relative bottom-[-5rem] font-[primary] text-[26vw] ">rejouice</h1>
+                <h1 class="cursor-default select-none relative bottom-[-5rem] font-[primary] text-[26vw] "><span class="font-[primary]">r</span><span class="font-[primary]">e</span><span class="font-[primary]">j</span><span class="font-[primary]">o</span><span class="font-[primary]">u</span><span class="font-[primary]">i</span><span class="font-[primary]">c</span><span class="font-[primary]">e</span></h1>
             </div>
 
 
@@ -29,7 +34,18 @@
 
 
 
-        <div id="page2" class="h-screen bg-red-700"></div>
+        <div id="page2" class="h-screen bg-[#faf8f3] w-full px-10">
+
+            <div class="flex justify-between border-b-[1px] border-black h-40 items-end pb-4 text-2xl border-opacity-40">
+                    <p>Full-service creative agency. <br>Two engagement models.</p>
+                    <p>Paris & San Diego</p>
+            </div>
+
+            <div>
+                    <h2 class="text-6xl leading-tight pr-24 font-medium mt-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a digital brand accelerator. We design, develop, and scale market-defining brands by unlocking their hidden potential. Choose full cash compensation or offset up to 50% of our fees for equity in your company. Your vision, your decision.</h2>
+            </div>
+        
+        </div>
     
 
 
@@ -43,6 +59,6 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="src/script.js"></script> -->
+    <script src="src/script.js"></script>
 </body>
 </html>
