@@ -4,5 +4,13 @@
 
 @font-face {
     font-family: head;
-    src: url(./Heading-Now-Variable.ttf);
+    src: url(./assets/Heading-Now-Variable.ttf);
+}
+@font-face {
+    font-family: primary;
+    src: url(./assets/Rejouice-Headline.woff2);
+}
+@font-face {
+    font-family: secondary;
+    src: url(./assets/NBInternationalProBoo.woff2);
 }

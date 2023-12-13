@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <title>tailwind-gsap-practice</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="w-full h-full text-white">
-
-    <div id="loader" class="w-full h-screen bg-gray-500 fixed z-40 flex justify-center items-center">
-        <h1 class="text-8xl ">0%</h1>
-    </div>
-
-    <div id="main" class="w-full h-full">
+<body class="font-[secondary]">
 
 
-        <div id="page1" class="px-10 overflow-hidden bg-black w-full h-screen">
+    <div id="main">
 
-            <nav class="h-24 p-8 align-middle items-center w-full border-b-[1px] border-gray-700 flex justify-between z-10 relative">
-                    <div>
-                        <h1 class="text-5xl font-light ">MOQO</h1>
-                    </div>
-                    <div class="flex gap-20 font-light text-xl cursor-pointer">
-                        <p class="">WORK</p>
-                        <p>CONTACT</p>
-                        <p>MENU</p>
-                    </div>
-            </nav>
+        <div id="page1" class="h-screen relative overflow-hidden">
 
-            <h1 class="uppercase text-[40vw] font-[head] whitespace-nowrap [font-stretch:255%] font-[999] leading-none">we build brands</h1>
+            <video class="absolute z-0 w-full h-full object-cover" autoplay loop muted src="./src/assets/RJ-2.0-Video background .mp4"></video>
+
+            <div id="page1-cont" class="text-white relative z-10 w-full h-full flex flex-col justify-between items-center">
+                <nav class=" w-full flex justify-between px-12 h-28 items-center">
+                    <h3 class="text-xl">The Venture Agency.</h3>
+                    <h4 class="text-xl">Menu</h4>
+                </nav>
+                <h1 class="relative bottom-[-5rem] font-[primary] text-[26vw] ">rejouice</h1>
+            </div>
+
+
         </div>
 
 
-        <div id="page2" class="bg-slate-900 w-full h-screen"></div>
-        <div id="page3" class="bg-slate-500 w-full h-screen"></div>
+
+        <div id="page2" class="h-screen bg-red-700"></div>
+    
+
+
+
+
     </div>
 
-    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="src/script.js"></script>
+    <!-- <script src="src/script.js"></script> -->
 </body>
 </html>
