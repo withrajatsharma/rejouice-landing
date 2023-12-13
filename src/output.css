@@ -534,14 +534,236 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+.relative {
+  position: relative;
 }
 
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+.sticky {
+  position: sticky;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[-\] {
+  margin-top: -;
+}
+
+.mt-\[-1\] {
+  margin-top: -1;
+}
+
+.mt-\[-10\] {
+  margin-top: -10;
+}
+
+.mt-\[-10p\] {
+  margin-top: -10p;
+}
+
+.mt-\[-10px\] {
+  margin-top: -10px;
+}
+
+.mt-\[-100px\] {
+  margin-top: -100px;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-s {
+  border-inline-start-width: 1px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.border-b-\[\] {
+  border-bottom-color: ;
+}
+
+.border-b-\[1\] {
+  border-bottom-color: 1;
+}
+
+.border-b-\[1p\] {
+  border-bottom-color: 1p;
 }
 
 .bg-black {
@@ -549,7 +771,315 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
+.bg-slate-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[-\] {
+  padding-top: -;
+}
+
+.pt-\[-1\] {
+  padding-top: -1;
+}
+
+.pt-\[-10\] {
+  padding-top: -10;
+}
+
+.pt-\[-10p\] {
+  padding-top: -10p;
+}
+
+.pt-\[-10px\] {
+  padding-top: -10px;
+}
+
+.pt-\[-100px\] {
+  padding-top: -100px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-\[head\] {
+  font-family: head;
+}
+
+.font-\[\] {
+  font-family: ;
+}
+
+.text-\[40vw\] {
+  font-size: 40vw;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[20vh\] {
+  font-size: 20vh;
+}
+
+.text-\[0vh\] {
+  font-size: 0vh;
+}
+
+.text-\[40vh\] {
+  font-size: 40vh;
+}
+
+.text-\[80vh\] {
+  font-size: 80vh;
+}
+
+.text-\[50vh\] {
+  font-size: 50vh;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-\[9\] {
+  font-weight: 9;
+}
+
+.font-\[99\] {
+  font-weight: 99;
+}
+
+.font-\[999\] {
+  font-weight: 999;
+}
+
+.font-\[9999\] {
+  font-weight: 9999;
+}
+
+.font-\[999p\] {
+  font-weight: 999p;
+}
+
+.font-\[999px\] {
+  font-weight: 999px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[2\] {
+  color: 2;
+}
+
+.text-\[20\] {
+  color: 20;
+}
+
+.text-\[20v\] {
+  color: 20v;
+}
+
+.text-\[40v\] {
+  color: 40v;
+}
+
+.\[font-stretch\:2\] {
+  font-stretch: 2;
+}
+
+.\[font-stretch\:25\] {
+  font-stretch: 25;
+}
+
+.\[font-stretch\:250\] {
+  font-stretch: 250;
+}
+
+.\[font-stretch\:250\%\] {
+  font-stretch: 250%;
+}
+
+.\[font-stretch\:20\%\] {
+  font-stretch: 20%;
+}
+
+.\[font-stretch\:260\%\] {
+  font-stretch: 260%;
+}
+
+.\[font-stretch\:25\%\] {
+  font-stretch: 25%;
+}
+
+.\[font-stretch\:255\%\] {
+  font-stretch: 255%;
+}
+
+.\[font-stretch\:1\] {
+  font-stretch: 1;
+}
+
+.\[font-stretch\:10\] {
+  font-stretch: 10;
+}
+
+.\[font-stretch\:10\%\] {
+  font-stretch: 10%;
+}
+
+.\[font-stretch\:100\%\] {
+  font-stretch: 100%;
+}
+
+.\[font-stretch\:00\%\] {
+  font-stretch: 00%;
+}
+
+.\[font-stretch\:200\%\] {
+  font-stretch: 200%;
+}
+
+.\[font-stretch\:55\%\] {
+  font-stretch: 55%;
+}
+
+.\[font-stretch\:355\%\] {
+  font-stretch: 355%;
+}
+
+@font-face {
+  font-family: head;
+
+  src: url(./Heading-Now-Variable.ttf);
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
