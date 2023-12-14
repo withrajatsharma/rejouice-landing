@@ -87,17 +87,51 @@ menu.addEventListener("mouseleave" ,()=>{
      
 } )
 
-page1Cont.addEventListener("click" ,()=>{
-
-} )
 
 })();
 
+gsap.from("#page1-cont h1 span",{
+  y:200,
+  opacity:0,
+  stagger:.1
+})
+
 
 gsap.from("#page2 p",{
-  transform:"translateY(100%)",
+  y:200,
   opacity:0,
-  duration:1,
-  // stagger:.5
-
+  scrollTrigger:{
+    trigger:"#page2-1",
+    scroller:"#main",
+    start:"top 90%",
+    end:"top 80%",
+    scrub:2,
+   }
 })
+
+gsap.from("#page2 #line",{
+  width:"0px",
+  duration:1,
+  opacity:0,
+  scrollTrigger:{
+    trigger:"#page2-1",
+    scroller:"#main",
+    start:"top 70%",
+    end:"top 50%",
+    scrub:2,
+   }
+})
+
+gsap.from("#page2-2 span",{
+  y:200,
+  opacity:0,
+  duration:.5,
+  stagger:.1,
+  scrollTrigger:{
+    trigger:"#page2-1",
+    scroller:"#main",
+    start:"top 40%",
+    end:"top 20%",
+    scrub:2,
+   }
+  })

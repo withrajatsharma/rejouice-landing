@@ -14,3 +14,12 @@
     font-family: secondary;
     src: url(./assets/NBInternationalProBoo.woff2);
 }
+
+
+#page2 span{
+   display: block;
+}
+
+#page1-cont span{
+    display: inline-block;
+}
