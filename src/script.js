@@ -90,6 +90,42 @@ menu.addEventListener("mouseleave" ,()=>{
 
 })();
 
+
+(() =>{ 
+  var page5Cont = document.querySelector("#page5");
+  var cursor2 = document.querySelector("#cursor2");
+ 
+  
+  page5Cont.addEventListener("mousemove" , (e)=>{
+   
+        gsap.to(cursor2,{
+          x:e.x,
+          y:e.y,
+          duration:.4
+        })
+  
+  })
+  page5Cont.addEventListener("mouseenter" , (e)=>{
+  
+        gsap.to(cursor2,{
+          scale:1,
+          opacity:1,
+  
+        })
+  
+  })
+  page5Cont.addEventListener("mouseleave" , (e)=>{
+  
+        gsap.to(cursor2,{
+          scale:0,
+          opacity:0,
+  
+        })
+  
+  })
+  
+})();
+
 gsap.from("#page1-cont h1 span",{
   y:200,
   opacity:0,
@@ -135,3 +171,44 @@ gsap.from("#page2-2 span",{
     scrub:2,
    }
   })
+
+  gsap.from("#page4-2 p",{
+    y:200,
+    opacity:0,
+    scrollTrigger:{
+      trigger:"#page4-2",
+      scroller:"#main",
+      start:"top 80%",
+      end:"top 70%",
+      scrub:2,
+      // markers:true,
+     }
+  })
+
+  gsap.from("#page4 #line",{
+    width:"0px",
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+      trigger:"#page4-2",
+      scroller:"#main",
+      start:"top 70%",
+      end:"top 60%",
+      scrub:2,
+     }
+  })
+
+  gsap.from("#page4-3 ",{
+    y:200,
+    opacity:0,
+    duration:.5,
+    stagger:.1,
+    scrollTrigger:{
+      trigger:"#page4-2",
+      scroller:"#main",
+      start:"top 50%",
+      end:"top 40%",
+      scrub:2,
+      // markers:true
+     }
+    })
