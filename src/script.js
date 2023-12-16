@@ -212,3 +212,49 @@ gsap.from("#page2-2 span",{
       // markers:true
      }
     })
+
+
+
+
+
+
+  gsap.from("#page6-1 p",{
+    y:200,
+    opacity:0,
+    scrollTrigger:{
+      trigger:"#page6-1",
+      scroller:"#main",
+      start:"top 80%",
+      end:"top 70%",
+      scrub:2,
+      // markers:true,
+     }
+  })
+
+  gsap.from("#page6 #line",{
+    width:"0px",
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+      trigger:"#page6-1",
+      scroller:"#main",
+      start:"top 70%",
+      end:"top 60%",
+      scrub:2,
+     }
+  })
+
+  gsap.from("#page6-2 ",{
+    y:200,
+    opacity:0,
+    duration:.5,
+    stagger:.1,
+    scrollTrigger:{
+      trigger:"#page6-1",
+      scroller:"#main",
+      start:"top 50%",
+      end:"top 40%",
+      scrub:2,
+      // markers:true
+     }
+    })
