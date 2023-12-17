@@ -275,3 +275,27 @@ gsap.from("#page2-2 span",{
       },
       speed:8000,
     });
+
+    var time = gsap.timeline();
+
+    time.from("#text-wrap h3",{
+      opacity:0,
+      x:200,
+      duration:.8,
+      stagger:.4,
+    })
+    time.to("#text-wrap h3",{
+      opacity:0,
+      x:-200,
+      duration:.8,
+      stagger:.2,
+      delay:.5
+    })
+    time.to("#loader",{
+      opacity:0,
+      duration:.8,
+      delay:.2,
+      onComplete: ()=>{
+        document.querySelector("#loader").style.display="none";
+      }
+    })
