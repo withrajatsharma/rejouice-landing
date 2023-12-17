@@ -258,3 +258,20 @@ gsap.from("#page2-2 span",{
       // markers:true
      }
     })
+
+
+    
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      freeMode:{
+        enabled:true,
+        momentumBounce: true,
+      },
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: true,
+      },
+      speed:8000,
+    });
