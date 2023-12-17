@@ -27,7 +27,31 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();}
-loco();
+// loco();
+
+
+
+
+// LENIS
+// better smooth scrolling than locomotive
+// increase or decrese duration value to change smoothness values on website
+// first connect the lenis cdn than add this code from line 39 to 52 and what i suggest is try to remember it so that no need to visit it again and again for diff websites.
+const lenis = new Lenis({
+  duration: 2.5,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  
+
+});
+function raf(time) {
+  lenis.raf(time);
+  ScrollTrigger.update();
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
 
 
 
@@ -134,7 +158,7 @@ gsap.from("#page2 p",{
   opacity:0,
   scrollTrigger:{
     trigger:"#page2-1",
-    scroller:"#main",
+    scroller:"body",
     start:"top 90%",
     end:"top 80%",
     scrub:2,
@@ -147,7 +171,7 @@ gsap.from("#page2 #line",{
   opacity:0,
   scrollTrigger:{
     trigger:"#page2-1",
-    scroller:"#main",
+    scroller:"body",
     start:"top 70%",
     end:"top 50%",
     scrub:2,
@@ -161,7 +185,7 @@ gsap.from("#page2-2 span",{
   stagger:.1,
   scrollTrigger:{
     trigger:"#page2-1",
-    scroller:"#main",
+    scroller:"body",
     start:"top 40%",
     end:"top 20%",
     scrub:2,
@@ -173,7 +197,7 @@ gsap.from("#page2-2 span",{
     opacity:0,
     scrollTrigger:{
       trigger:"#page4-2",
-      scroller:"#main",
+      scroller:"body",
       start:"top 80%",
       end:"top 70%",
       scrub:2,
@@ -187,7 +211,7 @@ gsap.from("#page2-2 span",{
     opacity:0,
     scrollTrigger:{
       trigger:"#page4-2",
-      scroller:"#main",
+      scroller:"body",
       start:"top 70%",
       end:"top 60%",
       scrub:2,
@@ -201,7 +225,7 @@ gsap.from("#page2-2 span",{
     stagger:.1,
     scrollTrigger:{
       trigger:"#page4-2",
-      scroller:"#main",
+      scroller:"body",
       start:"top 50%",
       end:"top 40%",
       scrub:2,
@@ -219,7 +243,7 @@ gsap.from("#page2-2 span",{
     opacity:0,
     scrollTrigger:{
       trigger:"#page6-1",
-      scroller:"#main",
+      scroller:"body",
       start:"top 80%",
       end:"top 70%",
       scrub:2,
@@ -233,7 +257,7 @@ gsap.from("#page2-2 span",{
     opacity:0,
     scrollTrigger:{
       trigger:"#page6-1",
-      scroller:"#main",
+      scroller:"body",
       start:"top 70%",
       end:"top 60%",
       scrub:2,
@@ -247,7 +271,7 @@ gsap.from("#page2-2 span",{
     stagger:.1,
     scrollTrigger:{
       trigger:"#page6-1",
-      scroller:"#main",
+      scroller:"body",
       start:"top 50%",
       end:"top 40%",
       scrub:2,
