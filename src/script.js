@@ -126,11 +126,7 @@ menu.addEventListener("mouseleave" ,()=>{
   
 })();
 
-gsap.from("#page1-cont h1 span",{
-  y:200,
-  opacity:0,
-  stagger:.1
-})
+
 
 
 gsap.from("#page2 p",{
@@ -280,22 +276,28 @@ gsap.from("#page2-2 span",{
 
     time.from("#text-wrap h3",{
       opacity:0,
-      x:200,
-      duration:.8,
-      stagger:.4,
+      x:100,
+      duration:.5,
+      stagger:.2,
     })
     time.to("#text-wrap h3",{
       opacity:0,
-      x:-200,
-      duration:.8,
+      x:-100,
+      duration:.5,
       stagger:.2,
-      delay:.5
+      delay:.3
     })
     time.to("#loader",{
       opacity:0,
-      duration:.8,
+      duration:.4,
       delay:.2,
-      onComplete: ()=>{
-        document.querySelector("#loader").style.display="none";
-      }
+      display:"none"
+    })
+
+    time.from("#page1-cont h1 span",{
+      y:100,
+      opacity:0,
+      duration:.3,
+      stagger:.12,
+      delay:-.5
     })
