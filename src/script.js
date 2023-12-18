@@ -291,7 +291,7 @@ gsap.from("#page2-2 span",{
       },
       autoplay: {
         delay: 0,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
       },
       speed:8000,
     });
@@ -324,4 +324,44 @@ gsap.from("#page2-2 span",{
       duration:.3,
       stagger:.12,
       delay:-.5
+    })
+
+
+    gsap.from("#footer-top",{
+      y:-500,
+      duration:1,
+      opacity:-1,
+      scrollTrigger:{
+          trigger:"#footer-top",
+          scroller:"body",
+          start:"50% 80%",
+          end:"200% 8%",
+          scrub:3
+
+      }
+    })
+    gsap.from("#footer-down",{
+      opacity:.5,
+      scrollTrigger:{
+          trigger:"#footer-down",
+          scroller:"body",
+          scrub:2
+
+      }
+    })
+    gsap.from("#footer-text h1 span",{
+      y:-200,
+      opacity:0,
+      duration:2,
+      stagger:.4,
+      delay:1,
+      scrollTrigger:{
+          trigger:"#footer-text",
+          scroller:"body",
+          start:"0%% 80%",
+          end:"18% 80%",
+          markers:true,
+          scrub:4
+
+      }
     })
