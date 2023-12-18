@@ -360,7 +360,7 @@ gsap.from("#page2-2 span",{
           scroller:"body",
           start:"0%% 80%",
           end:"18% 80%",
-          markers:true,
+          // markers:true,
           scrub:4
 
       }
